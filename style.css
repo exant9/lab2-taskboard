@@ -3,6 +3,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -25,10 +26,14 @@ body {
   flex-wrap: wrap;
 }
 
+
 .page-header h1 {
   margin: 0;
   font-size: 28px;
 }
+
+
+
 
 .task-count {
   background-color: #2d6cdf;
@@ -42,16 +47,22 @@ body {
   margin-top: 15px;
 }
 
+
+
 .filter-area label {
   font-weight: bold;
   margin-right: 8px;
 }
+
+
 
 .filter-area select {
   padding: 8px;
   border: 1px solid #bbb;
   border-radius: 4px;
 }
+
+
 
 /* board layout */
 .board {
@@ -61,6 +72,7 @@ body {
   padding: 20px;
 }
 
+
 .column {
   background-color: white;
   border: 1px solid #d0d0d0;
@@ -68,6 +80,9 @@ body {
   padding: 15px;
   min-height: 250px;
 }
+
+
+
 
 .column-header {
   display: flex;
@@ -78,16 +93,22 @@ body {
   margin-bottom: 15px;
 }
 
+
+
 .column-header h2 {
   margin: 0;
   font-size: 22px;
 }
+
+
 
 .done-actions {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
 }
+
+
 
 /* buttons */
 button {
@@ -99,9 +120,12 @@ button {
   font-size: 14px;
 }
 
+
+
 button:hover {
   background-color: #dddddd;
 }
+
 
 .add-task-btn {
   background-color: #2d6cdf;
@@ -109,9 +133,12 @@ button:hover {
   border: none;
 }
 
+
+
 .add-task-btn:hover {
   background-color: #1f57bb;
 }
+
 
 #clearDoneBtn {
   background-color: #d9534f;
@@ -119,9 +146,14 @@ button:hover {
   border: none;
 }
 
+
+
 #clearDoneBtn:hover {
   background-color: #b93f3b;
 }
+
+
+
 
 /* task list */
 .task-list {
@@ -130,6 +162,7 @@ button:hover {
   margin: 0;
   min-height: 80px;
 }
+
 
 /* task card */
 .task-card {
@@ -140,6 +173,7 @@ button:hover {
   margin-bottom: 12px;
 }
 
+
 .task-title {
   margin: 0 0 8px 0;
   font-size: 18px;
@@ -147,12 +181,15 @@ button:hover {
   cursor: pointer;
 }
 
+
+
 .task-description {
   margin: 0 0 10px 0;
   font-size: 14px;
   color: #444;
   white-space: pre-line;
 }
+
 
 .task-meta {
   display: flex;
@@ -163,10 +200,15 @@ button:hover {
   margin-bottom: 10px;
 }
 
+
+
+
 .task-date {
   font-size: 13px;
   color: #666;
 }
+
+
 
 .task-actions {
   display: flex;
@@ -174,10 +216,14 @@ button:hover {
   flex-wrap: wrap;
 }
 
+
+
 .task-actions button {
   font-size: 13px;
   padding: 6px 10px;
 }
+
+
 
 .edit-btn {
   background-color: #f0ad4e;
@@ -185,9 +231,12 @@ button:hover {
   border: none;
 }
 
+
+
 .edit-btn:hover {
   background-color: #d9963c;
 }
+
 
 .delete-btn {
   background-color: #d9534f;
@@ -195,9 +244,13 @@ button:hover {
   border: none;
 }
 
+
+
 .delete-btn:hover {
   background-color: #b93f3b;
 }
+
+
 
 /* priority badge */
 .priority-badge {
@@ -209,22 +262,32 @@ button:hover {
   font-weight: bold;
 }
 
+
+
 .priority-low {
   background-color: #5cb85c;
 }
+
 
 .priority-medium {
   background-color: #f0ad4e;
 }
 
+
+
+
 .priority-high {
   background-color: #d9534f;
 }
+
+
 
 /* filtering helper */
 .is-hidden {
   display: none;
 }
+
+
 
 /* modal */
 .modal {
@@ -240,9 +303,12 @@ button:hover {
   padding: 20px;
 }
 
+
+
 .modal.hidden {
   display: none;
 }
+
 
 .modal-content {
   background-color: white;
@@ -253,20 +319,27 @@ button:hover {
   border: 1px solid #ccc;
 }
 
+
+
 .modal-content h2 {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
+
+
 .form-group {
   margin-bottom: 15px;
 }
+
+
 
 .form-group label {
   display: block;
   margin-bottom: 6px;
   font-weight: bold;
 }
+
 
 .form-group input,
 .form-group textarea,
@@ -278,9 +351,13 @@ button:hover {
   font-size: 14px;
 }
 
+
+
 .form-group textarea {
   resize: vertical;
 }
+
+
 
 .modal-buttons {
   display: flex;
@@ -288,15 +365,19 @@ button:hover {
   flex-wrap: wrap;
 }
 
+
 #saveTaskBtn {
   background-color: #2d6cdf;
   color: white;
   border: none;
 }
 
+
 #saveTaskBtn:hover {
   background-color: #1f57bb;
 }
+
+
 
 #cancelTaskBtn {
   background-color: #888;
@@ -304,9 +385,11 @@ button:hover {
   border: none;
 }
 
+
 #cancelTaskBtn:hover {
   background-color: #666;
 }
+
 
 /* inline edit input */
 .inline-edit-input {
@@ -317,10 +400,14 @@ button:hover {
   border-radius: 4px;
 }
 
+
+
 /* delete animation */
 .fade-out {
   animation: fadeOutCard 0.4s ease forwards;
 }
+
+
 
 @keyframes fadeOutCard {
   from {
@@ -332,6 +419,8 @@ button:hover {
     transform: translateX(20px);
   }
 }
+
+
 
 /* responsive layout */
 @media (min-width: 768px) {
